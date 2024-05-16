@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ảnh Kỉ Niệm</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#home" class="logo"> <img src="images/vn.jpg" alt="" /> </a>
+
+      <form action="" class="search-form">
+        <input
+          type="search"
+          name=""
+          placeholder="search here..."
+          id="search-box"
+        />
+        <label for="search-box" class="fas fa-search"></label>
+      </form>
+
+      <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-shopping-cart"></a>
+      </div>
+    </header>
+
+    <nav class="navbar">
+      <div id="close-navbar" class="fas fa-times"></div>
+      <a href="#home">home</a>
+      <a href="#shop">shop</a>
+      <a href="#gallery">gallery</a>
+      <a href="#team">team</a>
+      <a href="#arrivals">arrivals</a>
+      <a href="#blogs">blogs</a>
+    </nav>
+
+    <section class="home" id="home">
+      <div class="slide active">
+        <div class="content">
+          <img src="images/content-img-1.png" alt="" />
+          <span>Đỗ Thị Minh</span>
+          <h3>Cô gái tỏa nắng</h3>
+          <a href="#" class="btn">read more</a>
+          <div class="controls">
+            <div class="fas fa-angle-left" onclick="prev()"></div>
+            <div class="fas fa-angle-right" onclick="next()"></div>
+          </div>
+        </div>
+        <div class="image">
+          <img src="images/m8.jpg" alt="" />
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="content">
+          <img src="images/content-img-2.png" alt="" />
+          <span>Nguyễn Giang My</span>
+          <h3>Cô gái cầu vòng</h3>
+          <a href="#" class="btn">read more</a>
+          <div class="controls">
+            <div class="fas fa-angle-left" onclick="prev()"></div>
+            <div class="fas fa-angle-right" onclick="next()"></div>
+          </div>
+        </div>
+        <div class="image">
+          <img src="images/m14.png" alt="" />
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="content">
+          <img src="images/content-img-3.png" alt="" />
+          <span>Sự kiện sinh nhật</span>
+          <h3>Hai cô gái rất xinh đẹp</h3>
+          <a href="#" class="btn">read more</a>
+          <div class="controls">
+            <div class="fas fa-angle-left" onclick="prev()"></div>
+            <div class="fas fa-angle-right" onclick="next()"></div>
+          </div>
+        </div>
+        <div class="image">
+          <img src="images/m5.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="category">
+      <a href="#" class="box">
+        <img src="images/e1.png" alt="" />
+        <p>Like</p>
+      </a>
+
+      <a href="#" class="box">
+        <img src="images/e2.jpg" alt="" />
+        <p>Love</p>
+      </a>
+
+      <a href="#" class="box">
+        <img src="images/e3.png" alt="" />
+        <p>Á Á Á Á Á</p>
+      </a>
+
+      <a href="#" class="box">
+        <img src="images/e4.png" alt="" />
+        <p>Cool Ngầu</p>
+      </a>
+
+      <a href="#" class="box">
+        <img src="images/e5.jpg" alt="" />
+        <p>Cute</p>
+      </a>
+
+      <a href="#" class="box">
+        <img src="images/e6.jpg" alt="" />
+        <p>Ấm Qúa đi à</p>
+      </a>
+    </section>
+    <section class="about" id="about">
+      <div class="content">
+        <span>Bộ Ba Đẳng S CẤP</span>
+        <h3>Bạn bè thân thiết</h3>
+        <p>
+          Tương truyền rằng theo truyền thuyết có bộ ba chụp ảnh sinh nhật ở
+          Starbucks, bàn luận nói chuyện với nhau đủ thứ trên đời sau 1000 năm
+          không gặp.Hôm đó thật
+          <strong>NÀ</strong> vui và đầy cảm xúc.
+          <strong>MÃI YÊU MÃI YÊU</strong>.
+        </p>
+        <a href="#" class="btn">read more</a>
+      </div>
+    </section>
+
+    <section class="shop" id="shop">
+      <div class="heading">
+        <h1>SẢN PHẨM CỦA THẦN THÁNH</h1>
+        <p>
+          Bà con ai có nhu cầu <strong>CUỒNG</strong> đồ ngọt hãy lập tức đặt
+          ngay vào giỏ hàng để nhận các ưu đãi hấp dẫn
+        </p>
+      </div>
+
+      <div class="swiper products-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide">
+            <div class="image">
+              <span class="discount">-0,5%</span>
+              <img src="images/m9.jpg" alt="" />
+              <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+              </div>
+            </div>
+            <div class="content">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <p>beauty products</p>
+              <div class="price">$1.000 <span>$1.001</span></div>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="image">
+              <span class="discount">-0,5%</span>
+              <img src="images/m9.jpg" alt="" />
+              <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+              </div>
+            </div>
+            <div class="content">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <p>beauty products</p>
+              <div class="price">$1.000 <span>$1.001</span></div>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="image">
+              <span class="discount">-0,5%</span>
+              <img src="images/m9.jpg" alt="" />
+              <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+              </div>
+            </div>
+            <div class="content">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <p>beauty products</p>
+              <div class="price">$1.000 <span>$1.001</span></div>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="image">
+              <span class="discount">-0,5%</span>
+              <img src="images/m9.jpg" alt="" />
+              <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+              </div>
+            </div>
+            <div class="content">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <p>beauty products</p>
+              <div class="price">$1.000 <span>$1.001</span></div>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="image">
+              <span class="discount">-0,5%</span>
+              <img src="images/m9.jpg" alt="" />
+              <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+              </div>
+            </div>
+            <div class="content">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <p>beauty products</p>
+              <div class="price">$1.000 <span>$1.001</span></div>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="image">
+              <span class="discount">-0,5%</span>
+              <img src="images/m9.jpg" alt="" />
+              <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+              </div>
+            </div>
+            <div class="content">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <p>beauty products</p>
+              <div class="price">$1.000 <span>$1.001</span></div>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="image">
+              <span class="discount">-0,5%</span>
+              <img src="images/m9.jpg" alt="" />
+              <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+              </div>
+            </div>
+            <div class="content">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <p>beauty products</p>
+              <div class="price">$1.000 <span>$1.001</span></div>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="image">
+              <span class="discount">-0,5%</span>
+              <img src="images/m9.jpg" alt="" />
+              <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+              </div>
+            </div>
+            <div class="content">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <p>beauty products</p>
+              <div class="price">$1.000 <span>$1.001</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+      <div class="heading">
+        <h1>Những Siêu Mẫu Chân dài</h1>
+        <p>
+          Quá xinh ,quá đáng yêu, quá cao, quá tuyệt vời. Không có từ ngữ nào để
+          diễn tả những vẻ đẹp này
+        </p>
+      </div>
+
+      <div class="lightbox">
+        <a href="images/m11.png"><img src="images/m11.png" alt="" /></a>
+        <a href="images/m13.png"><img src="images/m13.png" alt="" /></a>
+        <a href="images/m14.png"><img src="images/m14.png" alt="" /></a>
+        <a href="images/m15.png"><img src="images/m15.png" alt="" /></a>
+        <a href="images/m17.jpg"><img src="images/m17.jpg" alt="" /></a>
+        <a href="images/m10.jpg"><img src="images/m10.jpg" alt="" /></a>
+      </div>
+    </section>
+    <section class="team" id="team">
+      <div class="heading">
+        <h1>Về các quý cô</h1>
+        <p>
+          Đứng Top đầu trường đại học Nhật bản, là nhân viên xuất sắc nhất của
+          năm chỉ sau 1 GIỜ
+        </p>
+      </div>
+
+      <div class="box-container">
+        <div class="box">
+          <div class="image">
+            <img src="images/m1.jpg" alt="" />
+            <div class="share">
+              <a href="#" class="fab fa-facebook-f"></a>
+              <a href="#" class="fab fa-twitter"></a>
+              <a href="#" class="fab fa-instagram"></a>
+              <a href="#" class="fab fa-linkedin"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>Nguyễn Giang My</h3>
+            <p>Chuyên gia Make-up</p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="images/m6.jpg" alt="" />
+            <div class="share">
+              <a href="#" class="fab fa-facebook-f"></a>
+              <a href="#" class="fab fa-twitter"></a>
+              <a href="#" class="fab fa-instagram"></a>
+              <a href="#" class="fab fa-linkedin"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>My My</h3>
+            <p>Chuyễn gia bán sản phẩm</p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="images/m16.jpg" alt="" />
+            <div class="share">
+              <a href="#" class="fab fa-facebook-f"></a>
+              <a href="#" class="fab fa-twitter"></a>
+              <a href="#" class="fab fa-instagram"></a>
+              <a href="#" class="fab fa-linkedin"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>Đỗ Thị Minh</h3>
+            <p>Chuyên gia Kinh Doanh</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="arrivals" id="arrivals">
+      <div class="heading">
+        <h1>Những sản phẩm mới nhập về</h1>
+        <p>
+          Các sản phẩm dưới đây được <strong>NHẬP KHẨU 1000%</strong> từ các
+          người mẫu, hiện tại đang có chương trình khuyến mãi hấp dẫn hãy nhanh
+          tay đặt hàng
+        </p>
+      </div>
+
+      <div class="swiper arrivals-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="images/m21.jpg" alt="" />
+            </div>
+            <div class="content">
+              <p>beauty products</p>
+              <div class="price">$10.000 <span>$10.001</span></div>
+              <a href="#" class="btn">add to cart</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="images/m21.jpg" alt="" />
+            </div>
+            <div class="content">
+              <p>beauty products</p>
+              <div class="price">$10.000 <span>$10.001</span></div>
+              <a href="#" class="btn">add to cart</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="images/m21.jpg" alt="" />
+            </div>
+            <div class="content">
+              <p>beauty products</p>
+              <div class="price">$10.000 <span>$10.001</span></div>
+              <a href="#" class="btn">add to cart</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="images/m21.jpg" alt="" />
+            </div>
+            <div class="content">
+              <p>beauty products</p>
+              <div class="price">$10.000 <span>$10.001</span></div>
+              <a href="#" class="btn">add to cart</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="images/m27.jpg" alt="" />
+            </div>
+            <div class="content">
+              <p>beauty products</p>
+              <div class="price">$20.000 <span>$20.001</span></div>
+              <a href="#" class="btn">add to cart</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="images/m27.jpg" alt="" />
+            </div>
+            <div class="content">
+              <p>beauty products</p>
+              <div class="price">$20.000 <span>$20.001</span></div>
+              <a href="#" class="btn">add to cart</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="images/m27.jpg" alt="" />
+            </div>
+            <div class="content">
+              <p>beauty products</p>
+              <div class="price">$20.000 <span>$20.001</span></div>
+              <a href="#" class="btn">add to cart</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="images/m27.jpg" alt="" />
+            </div>
+            <div class="content">
+              <p>beauty products</p>
+              <div class="price">$20.000 <span>$20.001</span></div>
+              <a href="#" class="btn">add to cart</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="swiper reviews-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide">
+            <div class="user">
+              <img src="images/m23.jpg" alt="" />
+              <div class="info">
+                <h3>My xinh gái</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+            <p class="text">
+              Chuyên gia make-up và bán hàng ai có nhu cầu hãy liên hệ với tôi
+              AHIHI
+            </p>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="user">
+              <img src="images/m24.jpg" alt="" />
+              <div class="info">
+                <h3>Minh Sành Địu</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+            <p class="text">
+              Chuyên gia kinh doanh có thể kiếm 1 ngày $200, ai có nhu cầu hãy
+              liên hệ với tôi đảm bảo thành công
+              <strong>tự do tài chính</strong>
+            </p>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="user">
+              <img src="images/w1.jpg" alt="" />
+              <div class="info">
+                <h3>Vương Siêu Nhân</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+            <p class="text">
+              Nhà Thiết Kế triệu đô sẽ giúp bạn thiết kế và sáng tạo những thứ
+              <strong>KHÔNG THUỘC VỀ TRÁI ĐẤT</strong>, ai có nhu cầu hãy liên
+              hệ nha MUAHAHAHAHAHA
+            </p>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="user">
+              <img src="images/pic-4.png" alt="" />
+              <div class="info">
+                <h3>john deo</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+            <p class="text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. In quis
+              ipsa aspernatur incidunt iusto veniam cumque error quaerat
+              officia. Aspernatur?
+            </p>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="user">
+              <img src="images/pic-5.png" alt="" />
+              <div class="info">
+                <h3>john deo</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+            <p class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus sequi minima sed obcaecati iste beatae quo praesentium,
+              deleniti earum velit labore nobis voluptates a quam veniam
+              delectus fugiat! Saepe, eos!
+            </p>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="user">
+              <img src="images/pic-6.png" alt="" />
+              <div class="info">
+                <h3>john deo</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+            <p class="text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. In quis
+              ipsa aspernatur incidunt iusto veniam cumque error quaerat
+              officia. Aspernatur?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="service">
+      <div class="box">
+        <img src="images/service-1.png" alt="" />
+        <h3>free shipping</h3>
+        <p>Free ship toàn thế giới nếu mua đơn hàng trên $100.000</p>
+      </div>
+
+      <div class="box">
+        <img src="images/service-2.png" alt="" />
+        <h3>secure payment</h3>
+        <p>
+          Thanh toán an toàn và tiện lợi (Lỡ có sao thì
+          <strong>Hổng có biết nha</strong>)
+        </p>
+      </div>
+
+      <div class="box">
+        <img src="images/service-3.png" alt="" />
+        <h3>24/7 support</h3>
+        <p>
+          Hỗ trợ nhiệt tình cho quý khách 24/7 nhưng nếu lúc đó tối muộn xin
+          không liên hệ vì chúng tôi đang say giấc nồng
+        </p>
+      </div>
+    </section>
+
+    <section class="blogs" id="blogs">
+      <div class="heading">
+        <h1>Những ảnh kỉ niệm được chụp bởi chuyên gia</h1>
+        <p>Xin mời thưởng</p>
+      </div>
+
+      <div class="swiper blogs-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="images/m7.jpg" alt="" />
+              <div class="icons">
+                <a href="#"> <i class="fas fa-user"></i> by My My </a>
+                <a href="#"> <i class="fas fa-clock"></i> 14 tháng 3,2024 </a>
+              </div>
+            </div>
+            <div class="content">
+              <h3>Thiên thần</h3>
+              <p>Cho hun miếng coi nào</p>
+              <a href="#" class="btn">read more</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="images/m25.jpg" alt="" />
+              <div class="icons">
+                <a href="#"> <i class="fas fa-user"></i> by Minh </a>
+                <a href="#"> <i class="fas fa-clock"></i> 11 tháng 2,2024 </a>
+              </div>
+            </div>
+            <div class="content">
+              <h3>Bác Gái xinh và trẻ đẹp quá đi</h3>
+              <p>Đỏ Hồng rực rỡ muôn vàn hoa</p>
+              <a href="#" class="btn">read more</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="images/m19.jpg" alt="" />
+              <div class="icons">
+                <a href="#"> <i class="fas fa-user"></i> by Điện thoại </a>
+                <a href="#"> <i class="fas fa-clock"></i> 31 tháng 3,2024 </a>
+              </div>
+            </div>
+            <div class="content">
+              <h3>Hình ảnh hai người mẫu đang nhìn nhau</h3>
+              <p>Ánh mắt ta chạm nhau,chỉ muốn bên nhau thật lâu</p>
+              <a href="#" class="btn">read more</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="images/m26.jpg" alt="" />
+              <div class="icons">
+                <a href="#"> <i class="fas fa-user"></i> by Minh </a>
+                <a href="#"> <i class="fas fa-clock"></i> 28 tháng 2,2024 </a>
+              </div>
+            </div>
+            <div class="content">
+              <h3>Cây chỉ đường</h3>
+              <p>Cô gái tỏa sáng bên cây cỗ chỉ đường</p>
+              <a href="#" class="btn">read more</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="images/m12.png" alt="" />
+              <div class="icons">
+                <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                <a href="#"> <i class="fas fa-clock"></i> 5 tháng 4, 2022 </a>
+              </div>
+            </div>
+            <div class="content">
+              <h3>Lấp ló</h3>
+              <p>Bông hoa lấp ló đẹp hơn cả hoa anh đào</p>
+              <a href="#" class="btn">read more</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="images/m20.jpg" alt="" />
+              <div class="icons">
+                <a href="#"> <i class="fas fa-user"></i> by My MY </a>
+                <a href="#"> <i class="fas fa-clock"></i> 21 tháng 3, 2024 </a>
+              </div>
+            </div>
+            <div class="content">
+              <h3>Đôi bạn cùng tiến</h3>
+              <p>Độ ngầu vô hạn siêu cấp thanh lịch vố địch khắp vũ trụ</p>
+              <a href="#" class="btn">read more</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>quick links</h3>
+          <a class="link" href="#home">
+            <i class="fas fa-angle-right"></i> home</a
+          >
+          <a class="link" href="#shop">
+            <i class="fas fa-angle-right"></i> shop</a
+          >
+          <a class="link" href="#gallery">
+            <i class="fas fa-angle-right"></i> gallery</a
+          >
+          <a class="link" href="#team">
+            <i class="fas fa-angle-right"></i> team</a
+          >
+          <a class="link" href="#arrivals">
+            <i class="fas fa-angle-right"></i> arrivals</a
+          >
+          <a class="link" href="#blogs">
+            <i class="fas fa-angle-right"></i> blogs</a
+          >
+        </div>
+
+        <div class="box">
+          <h3>extra links</h3>
+          <a href="#" class="link">
+            <i class="fas fa-angle-right"></i> my order
+          </a>
+          <a href="#" class="link">
+            <i class="fas fa-angle-right"></i> my favorite
+          </a>
+          <a href="#" class="link">
+            <i class="fas fa-angle-right"></i> my wishlist
+          </a>
+          <a href="#" class="link">
+            <i class="fas fa-angle-right"></i> private policy
+          </a>
+          <a href="#" class="link">
+            <i class="fas fa-angle-right"></i> terms of use
+          </a>
+        </div>
+
+        <div class="box">
+          <h3>contact info</h3>
+          <p><i class="fas fa-phone"></i> +123-456-7890</p>
+          <p><i class="fas fa-phone"></i> +111-222-3333</p>
+          <p><i class="fas fa-envelope"></i> YourName@gmail.com</p>
+          <p><i class="fas fa-map"></i> City, Country - 12345</p>
+          <div class="share">
+            <a
+              href="https://www.facebook.com/nagisa.shiota.56829446"
+              class="fab fa-facebook-f"
+            ></a>
+            <a
+              href="https://www.facebook.com/nagisa.shiota.56829446"
+              class="fab fa-twitter"
+            ></a>
+            <a
+              href="https://www.facebook.com/nagisa.shiota.56829446"
+              class="fab fa-youtube"
+            ></a>
+            <a
+              href="https://www.facebook.com/nagisa.shiota.56829446"
+              class="fab fa-linkedin"
+            ></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <h3>newsletter</h3>
+          <p>subscribe for latest updates</p>
+          <form action="">
+            <input
+              type="email"
+              name=""
+              placeholder="enter your email"
+              id=""
+              class="email"
+            />
+            <input type="submit" value="subscribe" class="btn" />
+          </form>
+        </div>
+      </div>
+
+      <div class="credit">
+        created by
+        <span><a href="https://freewebsitecode.com/">Vương Đẹp Trai</a></span>
+        | QUÁ ĐẸP TRAI!
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
+
+    <script>
+      lightGallery(document.querySelector(".gallery .lightbox"));
+    </script>
+  </body>
+</html>
